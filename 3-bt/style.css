@@ -1,0 +1,82 @@
+footer {
+	background: #131212;
+	padding: 29px 0;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-transform: uppercase;
+}
+.single-content {
+	text-align: center;
+}
+
+.single-box p {
+	color: #fff;
+}
+
+.single-box ul {
+	list-style: none;
+	padding: 2px 0 0 0;
+
+}
+.single-box ul li a {
+	text-decoration: none;
+	color: #fff;
+	font-weight: 100;
+	font-size: 16px;
+	cursor: pointer;
+	position: relative;
+	border: none;
+	background: none;
+	transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition-duration: 400ms;
+	transition-property: color;
+
+}
+.single-box ul li a:focus,
+.single-box ul li a:hover {
+  color: #ffba08;
+}
+
+.single-box ul li a:focus:after,
+.single-box ul li a:hover:after {
+  width: 100%;
+  left: 0%;
+}
+
+.single-box ul li a:after {
+  content: "";
+  pointer-events: none;
+  bottom: -3px;
+  left: 50%;
+  position: absolute;
+  width: 0%;
+  height: 2px;
+  background-color: #ffba08;
+  transition-timing-function: cubic-bezier(0.25, 0.8, 0.25, 1);
+  transition-duration: 400ms;
+  transition-property: width, left;
+}
+.single-box h3{
+	color: #ffff;
+	font-size: 30px;
+}
+
+	
+.socials i {
+	margin-right: 25px;
+	font-size: 16px;
+	padding: 10px 0 0 0;
+}
+.socials i:hover{
+	color: #ffba08;
+}
+@media (min-width: 576px) {
+	.single-box ul li a {
+		margin-right: 30px;
+
+	}
+}
